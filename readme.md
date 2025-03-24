@@ -1,48 +1,45 @@
-# Football Updates
+# Tem Jogo Hoje - Backend
 
-This is a simple frontend application that allows users to register their email to receive updates on their favorite football team. The application will notify the user when their selected team is playing.
+This is the backend for the "Tem Jogo Hoje" application. It registers the user's email and favorite teams to notify the user when their favorite team is playing.
 
 ## Features
 
-- Register an email to receive updates
-- Input your favorite football team
-- Receive notifications when your team is playing
+- User registration with email
+- Favorite teams management
+- Notifications for upcoming games
 
-## Getting Started
-
-### Prerequisites
-
-- Node.js
-- npm (Node Package Manager)
-
-### Installation
+## Installation
 
 1. Clone the repository:
-  ```bash
-  git clone https://github.com/yourusername/football-updates.git
+  ```sh
+  git clone https://github.com/yourusername/tem-jogo-hoje-backend.git
   ```
 2. Navigate to the project directory:
-  ```bash
-  cd football-updates
+  ```sh
+  cd tem-jogo-hoje-backend
   ```
-3. Install the dependencies:
-  ```bash
+3. Install dependencies:
+  ```sh
   npm install
   ```
 
-### Running the Application
-
-To start the application, run:
-```bash
-npm start
-```
-
-The application will be available at `http://localhost:3000`.
-
 ## Usage
 
-1. Open the application in your browser.
-2. Enter your email address.
-3. Input the name of your favorite football team.
-4. Submit the form to start receiving updates.
+1. Start the server:
+  ```sh
+  npm start
+  ```
+2. The server will be running on `http://localhost:3000`.
 
+## API Endpoints
+
+- `POST /register`: Register a new user with email and favorite teams.
+- `GET /notifications`: Get notifications for the user's favorite teams.
+
+## Contributing
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Create a new Pull Request.
